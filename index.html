@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-title">
+        <div>Password Generator</div>
+    </div>
+    <div class="container-options">
+        <div class="container-options-col">
+            <label class="container-checkbox">
+                <input type="checkbox">
+                <span>Lowercase</span>
+            </label>
+            <label class="container-checkbox"> 
+                <input type="checkbox">
+                <span>Uppercase</span>
+            </label>
+        </div>
+        <div class="container-options-col">
+            <label class="container-checkbox"> 
+                <input type="checkbox">
+                <span>Special Characters</span>
+            </label>
+            <label class="container-checkbox"> 
+                <input type="checkbox">
+                <span>Numbers</span>
+            </label>
+        </div>
+    </div>
+    <div class="slider-container">
+        <input type="range" min="1" max="100" value="50" class="slider">
+    </div>
+    <div class="container-passwd"></div>
+</body>
+</html>
