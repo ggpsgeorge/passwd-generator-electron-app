@@ -44,8 +44,15 @@ body{
     gap: 0.3em;
 }
 
+.container-slider {
+    display: flex;
+    justify-content: center;
+}
+
 .slider {
-    width: 100%;
+    width: 90%;
+    height: 25px;
+    padding: 15px;
 }
 
 .container-passwd {
