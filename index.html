@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="linkers/passwd_generator.js"></script>
 </head>
 <body>
     <div class="container-title">
@@ -14,7 +15,7 @@
     <div class="container-options">
         <div class="container-options-col">
             <label class="container-checkbox">
-                <input type="checkbox">
+                <input id="lowercase" type="checkbox">
                 <span>Lowercase</span>
             </label>
             <label class="container-checkbox"> 
@@ -38,7 +39,7 @@
     </div>
     <div class="container-passwd">
         <div class="output-passwd">OUTPUT</div>
-        <button class="button-generate">GENERATE</button>
+        <button id="generate" class="button-generate" onclick="generate(4, `1234`)">GENERATE</button>
     </div>
 </body>
 </html>

@@ -9,7 +9,7 @@ class Engine(AbstractEngine):
         "4": "0123456789"
     }
     
-    def generatePassword(self, numOfChars: int, options: str) -> str:
+    def generatePassword(self, numOfChars: int, options: list[str]) -> str:
         
         alphabet: str = ''
 
