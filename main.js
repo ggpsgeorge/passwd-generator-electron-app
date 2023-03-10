@@ -1,4 +1,4 @@
-const { BrowserWindow, app, ipcMain, shell } = require("electron")
+const { BrowserWindow, app } = require("electron")
 const path = require("path");
 
 

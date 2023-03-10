@@ -1,9 +1,7 @@
 const generate = document.getElementById("generate")
 
-console.log(versions.node(), versions.chrome(), versions.electron())
-
 generate.addEventListener('click', (event, args) => {
-    console.log(event)
+    console.log(PythonShell.password(32, 1, 2, 3, 4, 5))
 })
 
 function isCheked(htmlElement){
