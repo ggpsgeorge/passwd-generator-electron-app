@@ -4,12 +4,19 @@ const path = require("path");
 
 const createWindow = () => {
     const win = new BrowserWindow({
-        width: 360,
+        width: 720,
         height: 366,
-        icon: path.join(__dirname, 'public\\icon.png')
+        icon: path.join(__dirname, 'public\\icon.png'),
+        webPreferences: {
+            contextIsolation: true,
+            nodeIntegration: true,
+            preload: path.join(__dirname, 'preload.js')
+        },
+        devTools: true,
     })
 
     win.loadFile("index.html")
+    win.webContents.openDevTools()
 
 }
 
@@ -28,5 +35,3 @@ app.on('window-all-closed', () => {
         app.quit()
     }
 })
-
-

@@ -1,10 +1,10 @@
 const generate = document.getElementById("generate")
 
-generate.addEventListener('click', generatePassword)
+console.log(versions.node(), versions.chrome(), versions.electron())
 
-function generatePassword(event) {
+generate.addEventListener('click', (event, args) => {
     console.log(event)
-}
+})
 
 function isCheked(htmlElement){
     return htmlElement.checked
