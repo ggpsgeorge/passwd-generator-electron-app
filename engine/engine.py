@@ -9,7 +9,7 @@ class Engine(AbstractEngine):
         "4": "0123456789"
     }
     
-    def generatePassword(self, numOfChars: int, options: list[str]) -> str:
+    def generatePassword(self, numOfChars: int, options: list[int]) -> str:
         
         alphabet: str = ''
 
@@ -19,6 +19,9 @@ class Engine(AbstractEngine):
         
         alphabet_len: int = len(alphabet)
         password: str = ''
+
+        if alphabet_len <= 0:
+            return ""
         
         for _ in range(numOfChars):
             password += (alphabet[secrets.randbelow(alphabet_len)])
