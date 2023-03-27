@@ -4,7 +4,7 @@ const uppercase = document.getElementById("uppercase")
 const special = document.getElementById("special")
 const numbers = document.getElementById("numbers")
 const slider = document.getElementById("slider")
-const password = document.getElementById("password")
+let password = document.getElementById("password")
 
 generate.addEventListener('click', (event) => {
     args = {
@@ -20,16 +20,13 @@ generate.addEventListener('click', (event) => {
     if (special.checked == false){args.special = 0}
     if (numbers.checked == false){args.numbers = 0}
 
-    console.log(args)
-
-    let password_text = PythonShell.password(
+    password = pythonShell.password(
+        password,
         args.slider,
         args.lowercase,
         args.uppercase,
         args.special,
         args.numbers
     )
-    
-    password.innerHTML = password_text
 
 })

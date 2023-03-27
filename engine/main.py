@@ -20,6 +20,7 @@ def main():
 
     password = engine.generatePassword(numOfChars, options)
     print(password)
+    sys.stdout.flush()
 
     # userInterface.drawInterfaceTkinter()
 
