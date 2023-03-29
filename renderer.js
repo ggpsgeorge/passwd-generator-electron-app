@@ -4,7 +4,12 @@ const uppercase = document.getElementById("uppercase")
 const special = document.getElementById("special")
 const numbers = document.getElementById("numbers")
 const slider = document.getElementById("slider")
+let sliderValue = document.getElementById("slider-value")
 let password = document.getElementById("password")
+
+slider.addEventListener('change', (event) => {
+    sliderValue.innerText = slider.value
+})
 
 generate.addEventListener('click', (event) => {
     args = {
