@@ -10,11 +10,11 @@ const createWindow = () => {
             nodeIntegration: true,
             preload: path.join(__dirname, 'preload.js')
         },
-        devTools: true,
+        // devTools: true,
     })
 
     win.loadFile("index.html")
-    win.webContents.openDevTools()
+    // win.webContents.openDevTools()
 
 }
 
@@ -32,4 +32,6 @@ app.on('window-all-closed', () => {
     if(process.platform === 'darwin'){
         app.quit()
     }
+
+    app.quit()
 })
